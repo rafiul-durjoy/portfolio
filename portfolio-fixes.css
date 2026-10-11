@@ -1,0 +1,89 @@
+/* Portfolio design fixes: add after style.css via <link> in index.html. */
+:root{--fix-accent:#37d8e8;--fix-muted:#a2b0c6;--fix-bg:#080f1f}
+html{scroll-padding-top:85px}
+body{overflow-x:clip}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #37d8e8;outline-offset:3px}
+/* Hero proportions, only adjust the existing hero styles */
+.hero .hero-grid{grid-template-columns:minmax(0,1.18fr) minmax(300px,.9fr);gap:clamp(30px,5vw,70px)}
+.hero .hero-visual{width:100%;max-width:440px;margin-inline:auto}
+.hero .profile-frame{width:min(100%,355px);max-width:355px;margin-inline:auto}
+.hero .profile-photo{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.hero h1{font-size:clamp(42px,5.2vw,70px);line-height:1.12}
+/* Fit screenshot cards consistently */
+.featured-project-grid,.more-projects-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.featured-project-card{min-width:0;display:flex;flex-direction:column}
+.featured-project-content{display:flex;flex:1;flex-direction:column}
+.project-tech-list{margin-top:auto}
+.featured-project-link{margin-top:15px}
+.featured-project-image img{width:100%;height:100%;object-fit:cover;object-position:top center}
+/* No-JS project expander (native details/summary) */
+.more-projects-section{grid-column:1/-1;min-width:0;display:flex;flex-direction:column}
+.more-projects-grid{display:none;width:100%;text-align:left;order:1}
+.more-projects-section[open] .more-projects-grid{display:grid}
+.more-projects-button{order:2;display:inline-flex;align-items:center;justify-content:center;align-self:center;min-height:46px;margin-top:29px;padding:12px 27px;border:1px solid #37d8e8;border-radius:9px;color:#37d8e8;background:transparent;font-size:14px;font-weight:700;line-height:1.3;font-family:inherit;cursor:pointer;list-style:none}
+.more-projects-button::-webkit-details-marker{display:none}
+.more-projects-button::marker{content:""}
+.more-projects-button:hover{background:#37d8e8;color:#071121}
+.show-less-text{display:none}
+.more-projects-section[open] .show-more-text{display:none}
+.more-projects-section[open] .show-less-text{display:inline}
+/* Contact */
+.modern-contact-section{background:#0c1729}
+.modern-contact-grid{display:grid;grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);gap:clamp(25px,5vw,58px);align-items:start}
+.contact-info-content{padding-top:12px;min-width:0}
+.contact-small-label{display:block;color:#37d8e8;font-size:11px;font-weight:700;letter-spacing:2px;margin-bottom:16px}
+.contact-info-content h3{font-size:clamp(27px,3vw,39px);line-height:1.25;margin:0 0 17px;color:#f5f8ff}
+.contact-info-content h3 span{color:#37d8e8}
+.contact-intro{color:#a2b0c6;font-size:14px;line-height:1.85;margin-bottom:26px}
+.contact-info-list{display:grid;gap:12px}
+.contact-info-item{display:flex;align-items:center;gap:14px;min-width:0;padding:16px;border:1px solid #263a55;border-radius:12px;background:#142238;text-decoration:none;color:inherit}
+a.contact-info-item:hover{border-color:#37d8e8}
+.contact-info-icon{display:grid;place-items:center;flex:none;width:43px;height:43px;border-radius:10px;background:rgba(55,216,232,.10);color:#37d8e8}
+.contact-info-details{min-width:0;flex:1}
+.contact-info-details span{display:block;margin-bottom:3px;color:#849bb5;font-size:10px;font-weight:700;letter-spacing:1px}
+.contact-info-details strong{display:block;overflow-wrap:anywhere;color:#f5f8ff;font-size:13px}
+.contact-item-arrow{font-size:11px;color:#37d8e8}
+.contact-availability{display:flex;align-items:center;gap:10px;color:#b1c2d3;font-size:12px;margin-top:21px}
+.contact-availability-dot{width:9px;height:9px;background:#4fe0af;border-radius:50%;box-shadow:0 0 0 4px rgba(79,224,175,.1)}
+.contact-form-card{min-width:0;padding:clamp(21px,3vw,34px);background:#142238;border:1px solid #263a55;border-radius:17px;box-shadow:0 16px 42px rgba(0,0,0,.12)}
+.contact-form-heading{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+.contact-form-icon{display:grid;place-items:center;flex:none;width:46px;height:46px;background:#37d8e8;color:#071121;border-radius:11px}
+.contact-form-heading h3{color:#f5f8ff;font-size:21px;margin:0 0 5px}
+.contact-form-heading p{font-size:12px;color:#a2b0c6;margin:0}
+.modern-contact-form{display:grid;gap:18px}
+.contact-form-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.contact-form-field{display:grid;gap:8px;min-width:0}
+.contact-form-field label{color:#dce7f5;font-size:12px;font-weight:600}
+.contact-form-field input,.contact-form-field textarea{display:block;width:100%;box-sizing:border-box;padding:13px 14px;border:1px solid #334762;border-radius:9px;background:#0d192b;color:#f5f8ff;font:inherit;font-size:13px;outline:none}
+.contact-form-field textarea{resize:vertical;min-height:130px}
+.contact-form-field input:focus,.contact-form-field textarea:focus{border-color:#37d8e8}
+.contact-form-field input::placeholder,.contact-form-field textarea::placeholder{color:#8496ab}
+.contact-submit-button{min-height:48px;display:flex;align-items:center;justify-content:center;gap:12px;width:100%;background:#37d8e8;color:#071121;border:0;border-radius:9px;font-size:14px;font-weight:700;font-family:inherit;cursor:pointer}
+.contact-submit-button:hover{background:#8df4fc}
+.contact-form-note{font-size:11px;line-height:1.6;color:#9caec5;margin:0}
+.contact-honeypot{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important;left:-9999px!important}
+/* Footer: compact; no duplicate CTA */
+.premium-footer{background:#080f1f;border-top:1px solid #25384f;padding:46px 0 0;color:#f5f8ff;text-align:left}
+.premium-footer *{box-sizing:border-box}
+.premium-footer-main{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.75fr) minmax(0,1.2fr);gap:clamp(25px,5vw,65px);align-items:start;padding-bottom:40px}
+.premium-footer-logo{display:inline-block;margin-bottom:15px;font-size:29px;font-weight:800;line-height:1.2;color:#fff;text-decoration:none}
+.premium-footer-logo span{color:#37d8e8}
+.premium-footer-brand p{max-width:300px;color:#a2b0c6;font-size:13px;line-height:1.8;margin:0 0 20px}
+.premium-footer-social{display:flex;gap:10px}
+.premium-footer-social a{display:grid;place-items:center;width:42px;height:42px;border:1px solid #2a435d;border-radius:9px;background:#15273b;color:#37d8e8;text-decoration:none;font-size:17px}
+.premium-footer-social a:hover{background:#37d8e8;color:#071121}
+.premium-footer-links h3,.premium-footer-contact h3{font-size:15px;color:#fff;margin:3px 0 18px;font-weight:700}
+.premium-footer-links nav{display:grid;gap:12px}
+.premium-footer-links nav a{font-size:13px;color:#a2b0c6;text-decoration:none}
+.premium-footer-links nav a:hover{color:#37d8e8}
+.premium-footer-contact p{max-width:250px;color:#a2b0c6;font-size:13px;line-height:1.7;margin-bottom:15px}
+.premium-footer-email,.premium-footer-location{display:flex;align-items:center;gap:10px;font-size:12px;color:#b1c2d3;overflow-wrap:anywhere;margin-bottom:15px;text-decoration:none}
+.premium-footer-email i,.premium-footer-location i{color:#37d8e8}
+.premium-footer-contact-button{display:inline-flex;gap:9px;align-items:center;color:#37d8e8;font-size:12px;font-weight:700;text-decoration:none}
+.premium-footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;border-top:1px solid #25384f}
+.premium-footer-bottom p{margin:0;color:#91a6bf;font-size:12px}
+.premium-footer-bottom a{font-size:12px;color:#37d8e8;font-weight:700;text-decoration:none}
+@media(max-width:950px){.hero .hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:26px}.modern-contact-grid{grid-template-columns:1fr;gap:26px}.premium-footer-main{grid-template-columns:1fr 1fr}.premium-footer-brand{grid-column:1/-1}}
+@media(max-width:700px){.hero .hero-grid{grid-template-columns:1fr;gap:32px}.hero .hero-visual{max-width:320px}.hero .profile-frame{width:min(80%,270px)}.hero h1{font-size:clamp(36px,9vw,46px)}.featured-project-grid,.more-projects-grid,.more-projects-section[open] .more-projects-grid{grid-template-columns:1fr;gap:20px}.more-projects-button{font-size:13px;margin-top:24px}.contact-form-row{grid-template-columns:1fr}.modern-contact-grid{gap:25px}.premium-footer{padding-top:38px}.premium-footer-main{grid-template-columns:1fr;gap:28px;padding-bottom:33px}.premium-footer-brand{grid-column:auto}.premium-footer-bottom{flex-direction:column;text-align:center;gap:13px}.section{padding-block:70px}}
+@media(max-width:400px){.contact-info-item{padding:12px}.contact-form-card{padding:18px}.contact-form-heading h3{font-size:18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
