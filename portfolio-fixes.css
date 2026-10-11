@@ -88,199 +88,146 @@ a.contact-info-item:hover{border-color:#37d8e8}
 @media(max-width:400px){.contact-info-item{padding:12px}.contact-form-card{padding:18px}.contact-form-heading h3{font-size:18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
+
 /* =========================================
-   MOBILE SPACING OPTIMIZATION
-   ONLY TABLET AND MOBILE
+   GLOBAL SECTION SPACING OPTIMIZATION
+   DESKTOP + TABLET + MOBILE
 ========================================= */
 
-@media screen and (max-width: 700px) {
+/* DESKTOP */
+@media screen and (min-width: 1025px) {
 
-  /* ALL SECTIONS */
-  main > section.section,
-  .section {
-    padding-top: 48px !important;
-    padding-bottom: 48px !important;
+  main > section.section {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
   }
 
-  /* SECTION HEADINGS */
   .section-title {
-    margin-bottom: 26px !important;
-  }
-
-  .section-title h2 {
-    margin-top: 5px;
-    font-size: 28px;
-  }
-
-  .section-title p {
-    margin-top: 8px;
-    font-size: 12px;
-    line-height: 1.65;
-  }
-
-  /* HERO SECTION */
-  .hero {
-    min-height: auto !important;
-    padding-top: 45px !important;
-    padding-bottom: 48px !important;
+    margin-bottom: 32px !important;
   }
 
   .hero .hero-grid {
-    gap: 20px !important;
+    gap: 35px !important;
   }
 
-  .hero h1 {
-    margin-bottom: 10px;
+  .about-modern-grid,
+  .modern-contact-grid {
+    gap: 35px !important;
   }
 
-  .hero h2 {
-    margin-bottom: 10px;
-  }
-
-  .hero .actions {
-    margin-top: 20px;
-  }
-
-  .hero .hero-visual {
-    margin-top: 5px;
-  }
-
-  /* ABOUT SECTION */
-  .about-modern-grid {
-    gap: 24px !important;
-  }
-
-  .about-main-content h3 {
-    margin-bottom: 14px;
-  }
-
-  .about-main-content p {
-    margin-bottom: 12px;
-  }
-
-  .about-highlights {
-    margin-top: 18px;
-  }
-
-  .about-action {
-    margin-top: 20px;
-  }
-
-  /* SKILLS SECTION */
-  .modern-skills-grid {
-    gap: 14px !important;
-  }
-
-  .modern-skill-card {
-    padding: 20px;
-  }
-
-  .skills-bottom {
-    margin-top: 24px;
-  }
-
-  /* EXPERIENCE */
-  .experience-timeline {
-    gap: 15px !important;
-  }
-
-  .experience-card {
-    margin-bottom: 0;
-  }
-
-  /* EDUCATION */
-  .education-modern-grid {
-    gap: 14px !important;
-  }
-
-  /* PROJECTS */
-  .featured-project-grid,
-  .more-projects-grid,
-  .more-projects-section[open] .more-projects-grid {
-    gap: 16px !important;
-  }
-
-  .more-projects-button {
-    margin-top: 22px !important;
+  .modern-skills-grid,
+  .education-modern-grid,
+  .featured-project-grid {
+    gap: 22px !important;
   }
 
   .projects-footer {
-    margin-top: 28px !important;
+    margin-top: 30px !important;
   }
-
-  /* CONTACT */
-  .modern-contact-grid {
-    gap: 24px !important;
-  }
-
-  .contact-intro {
-    margin-bottom: 20px;
-  }
-
-  .contact-info-list {
-    gap: 10px;
-  }
-
-  .contact-availability {
-    margin-top: 15px;
-  }
-
-  .contact-form-card {
-    padding: 20px;
-  }
-
-  .contact-form-heading {
-    margin-bottom: 20px;
-  }
-
-  .modern-contact-form {
-    gap: 15px;
-  }
-
-  /* FOOTER */
-  .premium-footer {
-    padding-top: 32px !important;
-  }
-
-  .premium-footer-main {
-    gap: 24px !important;
-    padding-bottom: 26px;
-  }
-
-  .premium-footer-bottom {
-    padding: 18px 0;
-  }
-
 }
 
-/* EXTRA SMALL MOBILE */
+/* TABLET */
+@media screen and (min-width: 701px) and (max-width: 1024px) {
 
-@media screen and (max-width: 400px) {
-
-  main > section.section,
-  .section {
-    padding-top: 40px !important;
-    padding-bottom: 40px !important;
+  main > section.section {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
   }
 
-  .hero {
+  .section-title {
+    margin-bottom: 28px !important;
+  }
+
+  .hero .hero-grid {
+    gap: 25px !important;
+  }
+
+  .about-modern-grid,
+  .modern-contact-grid {
+    gap: 26px !important;
+  }
+
+  .modern-skills-grid,
+  .education-modern-grid,
+  .featured-project-grid {
+    gap: 18px !important;
+  }
+
+  .projects-footer {
+    margin-top: 26px !important;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 700px) {
+
+  main > section.section {
     padding-top: 38px !important;
-    padding-bottom: 40px !important;
+    padding-bottom: 38px !important;
   }
 
   .section-title {
     margin-bottom: 22px !important;
   }
 
-  .section-title h2 {
-    font-size: 25px;
+  .hero {
+    min-height: auto !important;
+  }
+
+  .hero .hero-grid {
+    gap: 18px !important;
+  }
+
+  .about-modern-grid,
+  .modern-contact-grid {
+    gap: 20px !important;
   }
 
   .modern-skills-grid,
   .education-modern-grid,
   .featured-project-grid {
-    gap: 12px !important;
+    gap: 14px !important;
   }
 
+  .experience-timeline {
+    gap: 14px !important;
+  }
+
+  .more-projects-section[open] .more-projects-grid {
+    gap: 14px !important;
+  }
+
+  .projects-footer {
+    margin-top: 24px !important;
+  }
+
+  .contact-form-card {
+    padding: 20px !important;
+  }
+
+  .premium-footer-main {
+    gap: 22px !important;
+  }
+}
+
+/* FOOTER SPACING - ALL DEVICES */
+
+.premium-footer .footer-cta {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.premium-footer-main {
+  padding-bottom: 32px;
+}
+
+/* CONTACT DETAILS SPACING */
+
+.contact-info-list {
+  gap: 12px;
+}
+
+.contact-availability {
+  margin-top: 16px;
 }
 
