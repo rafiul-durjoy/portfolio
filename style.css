@@ -1620,4 +1620,311 @@ footer {
 }
 
 
+/* ======================================
+   STEP 4 - EXPERIENCE & EDUCATION
+====================================== */
+
+/* EXPERIENCE */
+
+.experience-section {
+  background: #080f1f;
+}
+
+.experience-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 44px;
+}
+
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  bottom: 30px;
+  left: 15px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    #37d8e8,
+    #24425e,
+    transparent
+  );
+}
+
+.experience-card {
+  position: relative;
+  background: linear-gradient(145deg,#14233a,#101c30);
+  border: 1px solid #263a55;
+  border-radius: 18px;
+  padding: 28px;
+  margin-bottom: 25px;
+  transition: .3s ease;
+}
+
+.experience-card:last-child {
+  margin-bottom: 0;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  border-color: #37d8e8;
+  box-shadow: 0 15px 40px rgba(0,0,0,.18);
+}
+
+.experience-icon {
+  position: absolute;
+  top: 24px;
+  left: -58px;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #37d8e8;
+  color: #080f1f;
+  font-size: 12px;
+  box-shadow: 0 0 0 6px #102338;
+}
+
+.experience-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.experience-date {
+  color: #37d8e8;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.experience-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(54,231,165,.1);
+  color: #55e8b0;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.status-circle {
+  width: 7px;
+  height: 7px;
+  background: #36e7a5;
+  border-radius: 50%;
+}
+
+.experience-card h3 {
+  font-size: 21px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.experience-company {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #c4d2e3;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.experience-company i {
+  color: #37d8e8;
+}
+
+.employment-type {
+  display: inline-block;
+  background: #1d344b;
+  color: #d4e6f3;
+  border-radius: 6px;
+  padding: 5px 11px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.experience-description {
+  color: #a2b0c6;
+  font-size: 13px;
+  line-height: 1.9;
+  margin-bottom: 19px;
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.experience-tags span {
+  color: #37d8e8;
+  background: rgba(55,216,232,.08);
+  border: 1px solid rgba(55,216,232,.13);
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 10px;
+}
+
+/* EDUCATION */
+
+.education-section {
+  background: #0c1729;
+}
+
+.education-modern-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 22px;
+}
+
+.education-modern-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(145deg,#14233a,#101c30);
+  border: 1px solid #263a55;
+  border-radius: 18px;
+  padding: 27px;
+  transition: .3s ease;
+}
+
+.education-modern-card:hover {
+  transform: translateY(-6px);
+  border-color: #37d8e8;
+  box-shadow: 0 15px 35px rgba(0,0,0,.2);
+}
+
+.education-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.education-icon {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  color: #37d8e8;
+  background: rgba(55,216,232,.1);
+  border: 1px solid rgba(55,216,232,.2);
+  border-radius: 14px;
+  font-size: 23px;
+}
+
+.education-year {
+  color: #37d8e8;
+  background: rgba(55,216,232,.08);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.education-modern-card h3 {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 13px;
+}
+
+.education-institute {
+  color: #a2b0c6;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.education-result {
+  margin-top: auto;
+  border-top: 1px solid #263a55;
+  padding-top: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.education-result span {
+  color: #a2b0c6;
+  font-size: 12px;
+}
+
+.education-result strong {
+  color: #37d8e8;
+  font-size: 14px;
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+  .education-modern-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .experience-timeline {
+    padding-left: 30px;
+  }
+
+  .experience-timeline::before {
+    left: 9px;
+  }
+
+  .experience-icon {
+    left: -36px;
+    width: 29px;
+    height: 29px;
+  }
+
+  .experience-card {
+    padding: 21px;
+    border-radius: 14px;
+  }
+
+  .experience-card h3 {
+    font-size: 18px;
+  }
+
+  .experience-company {
+    align-items: flex-start;
+    font-size: 12px;
+  }
+
+  .experience-description {
+    font-size: 12px;
+  }
+
+  .education-modern-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .education-modern-card {
+    padding: 23px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experience-card,
+  .education-modern-card {
+    transition: none;
+  }
+
+  .experience-card:hover,
+  .education-modern-card:hover {
+    transform: none;
+  }
+}
+
 
