@@ -973,7 +973,7 @@ footer {
 }
 
 /* Mobile */
-@media (max-width: 300px) {
+@media (max-width: 600px) {
   .hero-visual {
     width: 75%;
     max-width: 230px;
