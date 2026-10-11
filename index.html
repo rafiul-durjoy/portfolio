@@ -1,156 +1,249 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta name="description" content="Rafiul Durjoy - WordPress Developer and Frontend Enthusiast">
+  <title>Rafiul Durjoy | WordPress Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
 
-<header>
-  <h1>Rafiul Durjoy</h1>
-  <p>WordPress Developer | Elementor | Internship Experience</p>
+<header class="site-header">
+  <div class="container nav-bar">
+    <a class="logo" href="#home">Rafiul<span>.</span></a>
+    <button class="menu-button" id="menuButton" aria-label="Toggle navigation" aria-controls="mainNav" aria-expanded="false">☰</button>
+    <nav id="mainNav" class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#experience">Experience</a>
-  <a href="#education">Education</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
+<main>
 
-<section id="about">
-  <h2>About Me</h2>
-    <p>
-    I am a passionate WordPress Developer with hands-on internship experience in real live projects.
-    I specialize in building responsive, user-friendly, and modern websites using WordPress and Elementor.
-  </p>
-
-  <p>
-    During my internship, I worked on multiple client projects including landing pages, business websites,
-    and basic e-commerce designs. I focused on creating clean UI, mobile responsiveness,
-    and smooth user experience.
-  </p>
-
-  <p>
-    I am continuously learning new technologies to improve my frontend and web development skills,
-    including HTML, CSS, and basic JavaScript. My goal is to build high-quality websites that are both
-    visually appealing and performance optimized.
-  </p>
+<!-- HERO SECTION -->
+<section class="hero section" id="home">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Open to Web Development Opportunities</span>
+      <h1>Hello, I'm <span class="accent">Rafiul Durjoy</span></h1>
+      <h2>WordPress Developer & Frontend Enthusiast</h2>
+      <p>I create modern, responsive and user-friendly websites using WordPress, Elementor, HTML and CSS.</p>
+      <div class="actions">
+        <a href="#projects" class="btn btn-primary">View My Work ↗</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <span class="code-mark">&lt;/&gt;</span>
+      <span class="floating-chip top-chip">✦ WordPress</span>
+      <span class="floating-chip bottom-chip">✓ Responsive Websites</span>
+    </div>
+  </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <h2>Skills</h2>
-  <p>
-    WordPress | Elementor | Theme Customization | HTML | CSS | Responsive Design
-  </p>
+<!-- ABOUT SECTION -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-title">
+      <span>INTRODUCTION</span>
+      <h2>About <em>Me</em></h2>
+      <p>A little about my development journey.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-description">
+        <h3>Building Beautiful Digital Experiences</h3>
+        <p>I'm Rafiul Durjoy, a WordPress Developer with practical experience building and customizing websites.</p>
+        <p>I work on Elementor layouts, responsive website design, theme customization and website maintenance.</p>
+        <p>I'm continuously improving my frontend development skills to deliver better digital experiences.</p>
+        <a href="#contact" class="btn btn-primary">Let's Connect</a>
+      </div>
+      <div class="facts">
+        <div><b>Name:</b><span>Rafiul Durjoy</span></div>
+        <div><b>Location:</b><span>Dhaka, Bangladesh</span></div>
+        <div><b>Specialization:</b><span>WordPress & Elementor</span></div>
+        <div><b>Education:</b><span>B.Sc. in Computer Science & Engineering</span></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="experience">
-  <h2>Work Experience</h2>
-
-  <h3>RM IT BD – Dhaka, Bangladesh</h3>
-  <p><b>Web Developer (WordPress Intern)</b> | 15 Jan 2026 – Current</p>
-  <ul>
-    <li>Assisting in WordPress website development and customization</li>
-    <li>Working with themes and plugins</li>
-    <li>Basic front-end tasks using HTML & CSS</li>
-    <li>Content management and website updates using WordPress CMS</li>
-    <li>Collaborating with senior developers and team members</li>
-  </ul>
-
-  <h3>TECH HAAT – Dhaka, Bangladesh</h3>
-  <p><b>Business Development Executive</b> | Jan 2025 – Dec 2025</p>
-  <ul>
-    <li>Generated new leads and business opportunities</li>
-    <li>Maintained client relationships and handled negotiations</li>
-    <li>Prepared proposals and closed sales deals</li>
-    <li>Conducted market research and competitor analysis</li>
-  </ul>
-
-  <h3>KHAN Engineering & Consultancy – Dhaka, Bangladesh</h3>
-  <p><b>Junior Planning Engineer</b> | Jan 2023 – Dec 2024</p>
-  <ul>
-    <li>Conducted planning meetings with clients</li>
-    <li>Prepared inception reports</li>
-    <li>Assisted project manager with timeline and resource planning</li>
-  </ul>
+<!-- SKILLS SECTION -->
+<section class="section alternate" id="skills">
+  <div class="container">
+    <div class="section-title">
+      <span>EXPERTISE</span>
+      <h2>My <em>Skills</em></h2>
+      <p>Technologies and tools that I use.</p>
+    </div>
+    <div class="cards skills-grid">
+      <article class="card">
+        <div class="card-icon">◈</div>
+        <h3>WordPress</h3>
+        <p>CMS setup, website development and theme customization.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon">▣</div>
+        <h3>Elementor</h3>
+        <p>Responsive visual page design and custom layouts.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon">⌘</div>
+        <h3>HTML5</h3>
+        <p>Clean, semantic markup and website structure.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon">✦</div>
+        <h3>CSS3</h3>
+        <p>Modern styling, animation, Flexbox and CSS Grid.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon">⌁</div>
+        <h3>Responsive Design</h3>
+        <p>Mobile, tablet and desktop friendly layouts.</p>
+      </article>
+      <article class="card">
+        <div class="card-icon">⚙</div>
+        <h3>JavaScript</h3>
+        <p>Interactive interfaces and DOM manipulation basics.</p>
+      </article>
+    </div>
+  </div>
 </section>
 
-<section id="education">
-  <h2>Education</h2>
-
-  <h3>B.Sc. in Computer Science and Engineering</h3>
-  <p>State University of Bangladesh (2022)</p>
-  <p>CGPA: 3.33 | Field: Engineering | Level: EQF Level 6</p>
-
-  <h3>Higher Secondary Certificate (HSC)</h3>
-  <p>Notre Dame College Mymensingh (2016)</p>
-  <p>Field: Science | Grade: 5.00 | EQF Level 5</p>
-
-  <h3>Secondary School Certificate (SSC)</h3>
-  <p>Mymensingh Zilla School (2014)</p>
-  <p>Field: Science | Grade: 5.00 | EQF Level 3</p>
+<!-- WORK EXPERIENCE -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-title">
+      <span>CAREER JOURNEY</span>
+      <h2>Work <em>Experience</em></h2>
+    </div>
+    <div class="timeline">
+      <article class="card timeline-item">
+        <div class="date">Jan 2026 – Present</div>
+        <h3>WordPress Developer (Intern)</h3>
+        <p class="organization">RM IT BD — Dhaka</p>
+        <p>WordPress website customization, Elementor pages, site maintenance and responsive styling.</p>
+      </article>
+      <article class="card timeline-item">
+        <div class="date">Jan 2025 – Dec 2025</div>
+        <h3>Business Development Executive</h3>
+        <p class="organization">TECH HAAT — Dhaka</p>
+        <p>Business outreach, client communication, proposals and developing new opportunities.</p>
+      </article>
+      <article class="card timeline-item">
+        <div class="date">Jan 2023 – Dec 2024</div>
+        <h3>Junior Planning Engineer</h3>
+        <p class="organization">KHAN Engineering & Consultancy</p>
+        <p>Planning coordination, project reporting and documentation.</p>
+      </article>
+    </div>
+  </div>
 </section>
 
-<section id="projects">
-  <h2>My Projects</h2>
-
-  <div class="project">
-    <img src="images/project1.png">
-    <h3>Project 1</h3>
+<!-- EDUCATION -->
+<section class="section alternate" id="education">
+  <div class="container">
+    <div class="section-title">
+      <span>ACADEMIC BACKGROUND</span>
+      <h2>My <em>Education</em></h2>
+    </div>
+    <div class="cards education-grid">
+      <article class="card">
+        <div class="date">2022</div>
+        <h3>B.Sc. in CSE</h3>
+        <p>State University of Bangladesh</p>
+        <p>CGPA: 3.33</p>
+      </article>
+      <article class="card">
+        <div class="date">2016</div>
+        <h3>Higher Secondary Certificate</h3>
+        <p>Notre Dame College Mymensingh</p>
+        <p>Science | GPA: 5.00</p>
+      </article>
+      <article class="card">
+        <div class="date">2014</div>
+        <h3>Secondary School Certificate</h3>
+        <p>Mymensingh Zilla School</p>
+        <p>Science | GPA: 5.00</p>
+      </article>
+    </div>
   </div>
-
-  <div class="project">
-    <img src="images/project2.png">
-    <h3>Project 2</h3>
-  </div>
-
-  <div class="project">
-    <img src="images/project3.png">
-    <h3>Project 3</h3>
-  </div>
-
-  <div class="project">
-    <img src="images/project4.png">
-    <h3>Project 4</h3>
-  </div>
-
-  <div class="project">
-    <img src="images/project5.png">
-    <h3>Project 5</h3>
-  </div>
-
-  <div class="project">
-    <img src="images/project6.png">
-    <h3>Project 6</h3>
-  </div>
-
-  <div class="project">
-    <img src="images/project7.png">
-    <h3>Project 7</h3>
-  </div>
-
-  <div class="project">
-    <img src="images/project8.png">
-    <h3>Project 8</h3>
-  </div>
-
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: mdurjoy148@gmail.com</p>
-  <p>Phone: +8801723479081</p>
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-title">
+      <span>MY WORK</span>
+      <h2>Featured <em>Projects</em></h2>
+      <p>A selection of sample layouts. Replace them with your real projects.</p>
+    </div>
+    <div class="cards projects-grid">
+      <article class="card project-card">
+        <div class="project-thumb">01</div>
+        <div class="project-info">
+          <h3>Business Website</h3>
+          <p>Sample responsive business website.</p>
+          <div class="tags">
+            <span>WordPress</span><span>Elementor</span>
+          </div>
+        </div>
+      </article>
+      <article class="card project-card">
+        <div class="project-thumb">02</div>
+        <div class="project-info">
+          <h3>E-commerce Store</h3>
+          <p>Sample online store and product showcase.</p>
+          <div class="tags">
+            <span>WordPress</span><span>Responsive</span>
+          </div>
+        </div>
+      </article>
+      <article class="card project-card">
+        <div class="project-thumb">03</div>
+        <div class="project-info">
+          <h3>Landing Page</h3>
+          <p>Sample modern marketing landing page.</p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
 </section>
+
+<!-- CONTACT -->
+<section class="section alternate" id="contact">
+  <div class="container">
+    <div class="contact-card">
+      <span class="eyebrow">LET'S CONNECT</span>
+      <h2>Have a Project <em>in Mind?</em></h2>
+      <p>I'm interested in web development opportunities and collaborating on exciting projects.</p>
+      <div class="actions centered">
+        <a href="mailto:mdurjoy148@gmail.com" class="btn btn-primary">Send Email ↗</a>
+        <a href="https://github.com/rafiul-durjoy" target="_blank" rel="noopener noreferrer" class="btn btn-outline">My GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
 
 <footer>
-  <p>© 2026 Rafiul Durjoy. All Rights Reserved.</p>
+  © <span id="year"></span> Rafiul Durjoy. All Rights Reserved.
 </footer>
 
 </body>
