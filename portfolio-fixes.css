@@ -231,3 +231,41 @@ a.contact-info-item:hover{border-color:#37d8e8}
   margin-top: 16px;
 }
 
+/* =========================================
+   MOBILE WORK EXPERIENCE GAP FIX
+========================================= */
+
+@media screen and (max-width: 700px) {
+
+  .experience-timeline {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  .experience-card {
+    position: relative;
+    width: 100%;
+    margin-bottom: 0 !important;
+  }
+
+  .experience-card + .experience-card {
+    margin-top: 0 !important;
+  }
+
+  .experience-content {
+    padding-bottom: 5px;
+  }
+
+}
+
+/* EXTRA SMALL MOBILE */
+
+@media screen and (max-width: 400px) {
+
+  .experience-timeline {
+    gap: 26px !important;
+  }
+
+}
+
