@@ -1376,4 +1376,248 @@ footer {
   }
 }
 
+/* =========================================
+   STEP 3 - PREMIUM SKILLS SECTION
+========================================= */
+
+.modern-skills {
+  position: relative;
+  background: #0c1729;
+  overflow: hidden;
+}
+
+.modern-skills .section-title {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 50px;
+}
+
+.modern-skills .section-title p {
+  max-width: 570px;
+}
+
+/* SKILL GRID */
+
+.modern-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+/* SKILL CARD */
+
+.modern-skill-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 29px;
+  background: linear-gradient(
+    145deg,
+    #14233a 0%,
+    #101c30 100%
+  );
+  border: 1px solid #263a55;
+  border-radius: 18px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.modern-skill-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    #37d8e8,
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modern-skill-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(55, 216, 232, 0.65);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modern-skill-card:hover::before {
+  opacity: 1;
+}
+
+/* CARD TOP */
+
+.skill-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.skill-logo {
+  width: 57px;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(55, 216, 232, 0.09);
+  border: 1px solid rgba(55, 216, 232, 0.22);
+  border-radius: 14px;
+  color: #37d8e8;
+  font-size: 28px;
+  transition: all 0.3s ease;
+}
+
+.modern-skill-card:hover .skill-logo {
+  color: #080f1f;
+  background: #37d8e8;
+  transform: rotate(-5deg);
+}
+
+.skill-number {
+  color: #496078;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* CARD CONTENT */
+
+.modern-skill-card h3 {
+  color: #f5f8ff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 13px;
+}
+
+.modern-skill-card p {
+  color: #a2b0c6;
+  font-size: 13px;
+  line-height: 1.85;
+  margin-bottom: 22px;
+}
+
+/* SKILL TAGS */
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.skill-tags span {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  color: #54dce9;
+  background: rgba(55, 216, 232, 0.09);
+  border: 1px solid rgba(55, 216, 232, 0.12);
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* BOTTOM DESCRIPTION */
+
+.skills-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 42px;
+  text-align: center;
+}
+
+.skills-bottom-icon {
+  color: #37d8e8;
+  font-size: 18px;
+}
+
+.skills-bottom p {
+  color: #a2b0c6;
+  font-size: 13px;
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+  .modern-skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .modern-skill-card {
+    padding: 24px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .modern-skills .section-title {
+    margin-bottom: 35px;
+  }
+
+  .modern-skills-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .modern-skill-card {
+    padding: 23px;
+    border-radius: 15px;
+  }
+
+  .skill-top {
+    margin-bottom: 18px;
+  }
+
+  .skill-logo {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  .modern-skill-card h3 {
+    font-size: 17px;
+  }
+
+  .modern-skill-card p {
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+
+  .skills-bottom {
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+
+  .skills-bottom p {
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modern-skill-card,
+  .modern-skill-card::before,
+  .skill-logo {
+    transition: none;
+  }
+
+  .modern-skill-card:hover,
+  .modern-skill-card:hover .skill-logo {
+    transform: none;
+  }
+}
+
+
 
