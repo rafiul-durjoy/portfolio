@@ -928,3 +928,65 @@ footer {
     transition: none !important;
   }
 }
+
+/* ===== PROFILE IMAGE SIZE FIX ===== */
+
+/* Desktop */
+.hero-visual {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.profile-frame {
+  width: 100%;
+  height: 350px;
+  aspect-ratio: auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+/* Floating badges */
+.hero-badge {
+  font-size: 11px;
+  padding: 9px 12px;
+}
+
+/* Tablet */
+@media (max-width: 950px) {
+  .hero-visual {
+    max-width: 270px;
+  }
+
+  .profile-frame {
+    height: 315px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero-visual {
+    width: 75%;
+    max-width: 230px;
+  }
+
+  .profile-frame {
+    height: 270px;
+    border-radius: 16px;
+  }
+
+  .hero-badge {
+    font-size: 9px;
+    padding: 7px 9px;
+  }
+}
+
